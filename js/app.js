@@ -8,5 +8,5 @@ window.onload = function () {
 	game.state.add('rue', sceneRueFemme.rue);
 	game.state.add('ruehomme', sceneRueHomme.ruehomme);
 
-	game.state.start('cuisineF');
+	game.state.start('rue');
 }

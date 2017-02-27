@@ -188,7 +188,8 @@ function voir(mrTrump){
 	;    balade.revive();
 	bulle.revive();
 	setTimeout(function(){             
-		coupe.revive();                    
+		coupe.revive(); 
+		music.destroy();                   
 	},4000)
 
 }

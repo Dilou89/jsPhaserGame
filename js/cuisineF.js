@@ -133,13 +133,14 @@ sceneCuisine.CuisineF.prototype = {
 
     
 
-    },
+},
 
-    collectPeppers : function(player, peppers) {
+collectPeppers : function(player, peppers) {
 
-        peppers.kill();
+    peppers.kill();
+    casserole.revive();
 
-        this.score += 50;
+    this.score += 50;
         //this.scoreText.text = 'Score: ' + this.score;
 
     },
@@ -151,9 +152,9 @@ sceneCuisine.CuisineF.prototype = {
       this.score+=50;
       //this.scoreText.text="score :" + this.score;
 
-    },
+  },
 
-    lancer : function() {
+  lancer : function() {
 
       couteau.body.gravity.x=-300;
         // score+=50;
